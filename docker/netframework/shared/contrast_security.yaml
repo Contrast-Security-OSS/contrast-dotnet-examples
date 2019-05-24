@@ -1,0 +1,7 @@
+# For full instructions on yaml configuration:
+# https://docs.contrastsecurity.com/installation-netconfig.html
+api:
+  url: https://teamserver-dotnet.contsec.com
+  api_key: <insert your api key here>
+  service_key: <insert service key here>
+  user_name: <insert user name here>
