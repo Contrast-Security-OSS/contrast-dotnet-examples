@@ -4,7 +4,7 @@ Example code snippets and scripts to complement documentation for Contrast .NET 
 
 Current examples in this repo:
 
-* [*auto-update/netframework/AutoUpdate.ps1](auto-update/netframework/AutoUpdate.ps1): Scripted installation or update of the .NET Framework agent.
+* [*auto-update/netframework/AutoUpdate.ps1*](auto-update/netframework/AutoUpdate.ps1): Scripted installation or update of the .NET Framework agent.
 
 * [*docker/netframework/Dockerfile-DefaultAppPool*](docker/netframework/Dockerfile-DefaultAppPool): Running the .NET Framework agent in a Docker container in the default AppPool
 
