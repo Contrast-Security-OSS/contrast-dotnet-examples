@@ -18,7 +18,7 @@ $env:COR_ENABLE_PROFILING = "1"
 $env:COR_PROFILER = "{EFEB8EE0-6D39-4347-A5FE-4D0C88BC5BC1}"
 $env:COR_PROFILER_PATH_32 = "C:\run\contrastAgent\content\contrastsecurity\ContrastProfiler-32.dll"
 $env:COR_PROFILER_PATH_64 = "C:\run\contrastAgent\content\contrastsecurity\ContrastProfiler-64.dll"
-$env:AGENT__DOTNET__CONTAINER = "true"
+$env:CONTRAST__AGENT__DOTNET__CONTAINER = "true"
 
 #### Contrast Configuration
 # Set path to config file. Remove if not using the yaml file, or if the yaml is in the default location (C:\ProgramData\contrast\dotnet\contrast_security.yaml)
@@ -29,10 +29,10 @@ $env:CONTRAST_CONFIG_PATH = "C:\run\config\contrast_security.yaml"
 # For example contrast.url becomes CONTRAST__URL. More documentation: https://docs.contrastsecurity.com/installation-netconfig.html#environment-variables
 
 # Minimum required settings for Contrast authentication:
-#$env:CONTRAST__URL = "https://app.contrastsecurity.com"
-#$env:CONTRAST__USER_NAME = "my_user_name"
-#$env:CONTRAST__SERVICE_KEY = "service_key"
-#$env:CONTRAST__API_KEY = "api_key"
+#$env:CONTRAST__API__URL = "https://app.contrastsecurity.com"
+#$env:CONTRAST__API__USER_NAME = "my_user_name"
+#$env:CONTRAST__API__SERVICE_KEY = "service_key"
+#$env:CONTRAST__API__API_KEY = "api_key"
 
 # Microsoft's ServiceMonitor process will restart IIS and shutdown when the IIS service shuts down.
 # It will also add the environment variables set above to the DefaultAppPool process.  
