@@ -4,9 +4,9 @@ Example code snippets and scripts to complement documentation for Contrast .NET 
 
 Current examples in this repo:
 
-* [*docker/netframework/Dockerfile-DefaultAppPool*](/blob/master/docker/netframework/Dockerfile-DefaultAppPool): Running the .NET Framework agent in a Docker container in the default AppPool
+* [*docker/netframework/Dockerfile-DefaultAppPool*](docker/netframework/Dockerfile-DefaultAppPool): Running the .NET Framework agent in a Docker container in the default AppPool
 
-* [*docker/netframework/Dockerfile-CustomAppPool*](/blob/master/docker/netframework/Dockerfile-CustomAppPool): Running the .NET Framework agent in a Docker container with a custom AppPool
+* [*docker/netframework/Dockerfile-CustomAppPool*](docker/netframework/Dockerfile-CustomAppPool): Running the .NET Framework agent in a Docker container with a custom AppPool
 
 
 >We will accept pull requests in this repo for more enhancements and use cases
