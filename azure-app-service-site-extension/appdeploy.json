@@ -1,0 +1,72 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sites_name": {
+            "defaultValue": "webgoat-dotnet-pm-template",
+            "type": "string"
+        }
+    },
+    "variables": {
+    },
+    "resources": [
+        {
+            "type": "Microsoft.Web/sites",
+            "apiVersion": "2018-11-01",
+            "name": "[parameters('sites_name')]",
+            "location": "East US",
+            "kind": "app",
+            "properties": {
+                "siteConfig": {
+                    "appSettings": [
+                        {
+                            "name": "CONTRAST__API__API_KEY",
+                            "value": "<CONTRAST__API__API_KEY>",
+                            "slotSetting": false
+                        },
+                        {
+                            "name": "CONTRAST__API__SERVICE_KEY",
+                            "value": "<CONTRAST__API__SERVICE_KEY>",
+                            "slotSetting": false
+                        },
+                        {
+                            "name": "CONTRAST__API__URL",
+                            "value": "<CONTRAST__API__URL>",
+                            "slotSetting": false
+                        },
+                        {
+                            "name": "CONTRAST__API__USER_NAME",
+                            "value": "<CONTRAST__API__USER_NAME>",
+                            "slotSetting": false
+                        },
+                        {
+                            "name": "CONTRAST__APPLICATION__METADATA",
+                            "value": "<CONTRAST__APPLICATION__METADATA> OPTIONAL",
+                            "slotSetting": false
+                        },
+                        {
+                            "name": "CONTRAST__APPLICATION__GROUP",
+                            "value": "<CONTRAST__APPLICATION__GROUP> OPTIONAL",
+                            "slotSetting": false
+                        },
+                        {
+                            "name": "CONTRAST__APPLICATION__NAME",
+                            "value": "<CONTRAST__APPLICATION__NAME> OPTIONAL",
+                            "slotSetting": false
+                        }
+                    ]
+                }
+            },
+            "resources": [
+                {
+                    "name": "Contrast.NET.Azure.SiteExtension",
+                    "type": "siteextensions",
+                    "apiVersion": "2018-11-01",
+                    "dependsOn": [
+                        "[resourceId('Microsoft.Web/Sites', parameters('sites_name'))]"
+                    ]
+                }
+            ]
+        }
+    ]
+}
