@@ -18,7 +18,6 @@ $env:COR_ENABLE_PROFILING = "1"
 $env:COR_PROFILER = "{EFEB8EE0-6D39-4347-A5FE-4D0C88BC5BC1}"
 $env:COR_PROFILER_PATH_32 = "C:\run\contrastAgent\content\contrastsecurity\ContrastProfiler-32.dll"
 $env:COR_PROFILER_PATH_64 = "C:\run\contrastAgent\content\contrastsecurity\ContrastProfiler-64.dll"
-$env:CONTRAST__AGENT__DOTNET__CONTAINER = "true"
 
 #### Contrast Configuration
 # Set path to config file. Remove if not using the yaml file, or if the yaml is in the default location (C:\ProgramData\contrast\dotnet\contrast_security.yaml)

@@ -20,7 +20,6 @@ $envVars = @{
     "COR_PROFILER_PATH_32" = "C:\run\contrastAgent\content\contrastsecurity\ContrastProfiler-32.dll";
     "COR_PROFILER_PATH_64" = "C:\run\contrastAgent\content\contrastsecurity\ContrastProfiler-64.dll";
     "CONTRAST_CONFIG_PATH" = "C:\run\config\contrast_security.yaml";
-    "CONTRAST__AGENT__DOTNET__CONTAINER" = "true"
 }
 
 
